@@ -16,6 +16,7 @@ Each skill defines a focused AI persona with scoped responsibilities, tool acces
 | `lead-dev-persona` | Lead Developer | Code reviews, PR feedback, architecture decisions, build failure analysis, implementation guidance | Technical review, code quality, development support, build failures, technical blockers |
 | `pm-persona` | Project Manager | Sprint planning, velocity tracking, risk management, blocker identification, stakeholder reporting | PM tasks, sprint status, blockers, project health, delivery tracking, velocity metrics |
 | `owasp-security-scan` | OWASP Security Expert | Vulnerability scanning against OWASP Top 10 (2021) and API Security Top 10 (2023) | Security audit, vulnerability scan, security review, OWASP check, XSS, injection, CSRF, SSRF |
+| `grill-me` | Design Concept Elicitation | Relentless requirements discovery before plans, PRDs, tickets, or implementation | Vague requirements, planning, PRDs, design tree, shared understanding, "grill me" |
 
 ## Project Structure
 
@@ -32,6 +33,8 @@ skills/
 ├── lead-dev-persona/
 │   └── SKILL.md
 ├── pm-persona/
+│   └── SKILL.md
+├── grill-me/
 │   └── SKILL.md
 └── owasp-security-scan/
     ├── SKILL.md
@@ -61,6 +64,10 @@ skills/
 - **Hybrid Agile** -- Scrum sprints with Kanban flow elements. Work item types: Feature, User Story, Task, Bug, Issue.
 - **Data-driven** -- Personas rely on metrics, queries, and evidence rather than assumptions.
 - **Challenge culture** -- Skills push back on vague requirements, skipped tests, and architectural shortcuts.
+
+## Fundamentals Skills
+
+Use fundamentals skills before role-specific personas when the work needs stronger shared understanding or engineering discipline. Start with `grill-me` when a request is vague, multi-branch, or likely to produce a premature plan; once the design concept is clear, hand off to the relevant persona or specialized workflow.
 
 ## SKILL.md Format
 
